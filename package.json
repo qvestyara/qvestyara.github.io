@@ -1,0 +1,26 @@
+{
+  "name": "qvestyara.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "jira-connector": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qvestyara/qvestyara.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qvestyara/qvestyara.github.io/issues"
+  },
+  "homepage": "https://github.com/qvestyara/qvestyara.github.io#readme"
+}
