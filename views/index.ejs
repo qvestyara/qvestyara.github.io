@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #list {
+            margin: 50px 0;
+        }
+
+        li {
+            list-style: none;
+            display: none;
+        }
+
+        li:first-child {
+            display: block;
+            text-align: center;
+            font-size: 70px;
+        }
+
+        input {
+            display: block;
+            background-color: lightgreen;
+            height: 70px;
+            width: 140px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+            font-size: 25px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id='list'>
+        <li><%=name%></li>
+    </ul>
+    <form action="/newReviewer" method=" POST">
+        <input type="submit" id='submitButton' onsubmit="disable()" value="Next">
+    </form>
+
+</body>
+<script>
+    window.onload = disable();
+    function disable() {
+        document.getElementById('submitButton').disabled = true
+        setTimeout(function () {
+            console.log('sdfdsfsdf')
+            document.getElementById('submitButton').disabled = false;
+        }, 2000);
+    }
+</script>
+
+</html>
