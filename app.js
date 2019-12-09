@@ -28,7 +28,7 @@ app.get('/newReviewer', (request, response) => {
     reviewers.length - 1 === index ? index = 0 : index++;
     response.redirect('/')
 })
-app.listen(port, (err) => {
+app.listen(process.env.PORT || port, (err) => {
     if (err) {
         return console.log('something bad happened', err)
     }
