@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta http-equiv="refresh" content="30" />
+    <meta
+      name="google-signin-client_id"
+      content="724621884932-hmo39oeradt2v751tnf16secsvdsa5i2.apps.googleusercontent.com"
+    />
     <title>Document</title>
-
     <style>
       #list {
         margin: 50px 0;
@@ -38,6 +41,7 @@
   </head>
 
   <body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <ul id="list">
       <li><%=name%></li>
     </ul>
